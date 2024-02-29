@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from datetime import datetime
+import pandas as pd
 
 # List of Star Wars APIs to be consumed
 url_peoples = 'https://swapi.dev/api/people/'
@@ -13,9 +14,9 @@ peoples = []
 films = []
 vehicles = []
 
-
 # ------------PEOPLES-----------------
 
+# Criação de lista com todo o conteúdo das paginações da API de peoples
 page = 1
 page_content = requests.get(url=url_peoples+'?page='+str(page)).json()
 next_page = page_content['next']
@@ -27,17 +28,34 @@ while (next_page != None):
     next_page = page_content['next']
     peoples.append(page_content)
 
-# Writing peoples to ./files/peoples.json
-with open('./files/peoples/peoples.json', 'w', encoding='utf-8') as outfile:
-    json.dump(peoples, outfile, ensure_ascii=False, indent=4)
+# Coleta de lista de anos dos itens consultados
+years = []
+df = pd.json_normalize(peoples, record_path=['results'])
+
+for index, row in df.iterrows():
+    year = datetime.strptime(row['created'], '%Y-%m-%dT%H:%M:%S.%fZ').year
+    if year not in years:
+        years.append(year)
+
+dict = df.to_dict('records')
+
+# Criação dos arquivos para cada ano
+for year in years:
+    if not os.path.exists(f"./files/peoples/{year}/"):
+        os.makedirs(f"./files/peoples/{year}/")
+        print("Directory created successfully")
+    with open(f"./files/peoples/{year}/peoples.json", 'w', encoding='utf-8') as outfile:
+        json.dump(dict, outfile, ensure_ascii=False, indent=4)
 
 # ------------PEOPLES-----------------
+
+"""
+
 
 
 # ------------FILMS-----------------
 
 # Writing films to ./files/films.json
-"""
 page = 1
 films_results = requests.get(url=url_films+'?page='+str(page)).json()['results']
 years = []
@@ -45,14 +63,11 @@ for film in films_results:
     film_year = datetime.strptime(film['created'], '%Y-%m-%dT%H:%M:%S.%fZ').year
     if film_year not in years:
         years.append(film_year)
-"""
 
-"""
 for year in years:
     if not os.path.exists(f"./files/films/{year}/"):
         os.makedirs(f"./files/films/{year}/")
         print("Directory created successfully")
-"""
 
 page = 1
 page_content = requests.get(url=url_films+'?page='+str(page)).json()
@@ -89,3 +104,6 @@ with open('./files/vehicles/vehicles.json', 'w', encoding='utf-8') as outfile:
     json.dump(vehicles, outfile, ensure_ascii=False, indent=4)
 
 # ------------VEHICLES-----------------
+
+
+"""
