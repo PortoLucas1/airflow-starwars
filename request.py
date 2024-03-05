@@ -32,18 +32,25 @@ while (next_page != None):
 years = []
 df = pd.json_normalize(peoples, record_path=['results'])
 
+anos = []
+
 for index, row in df.iterrows():
     year = datetime.strptime(row['created'], '%Y-%m-%dT%H:%M:%S.%fZ').year
+    anos.append(year)
     if year not in years:
         years.append(year)
 
-dict = df.to_dict('records')
+df['year'] = anos
+grouped = df.groupby(df.year)
 
 # Criação dos arquivos para cada ano
 for year in years:
     if not os.path.exists(f"./files/peoples/{year}/"):
         os.makedirs(f"./files/peoples/{year}/")
         print("Directory created successfully")
+    # Segmentando por ano
+    df_prov = grouped.get_group(year)
+    dict = df_prov.to_dict('records')
     with open(f"./files/peoples/{year}/peoples.json", 'w', encoding='utf-8') as outfile:
         json.dump(dict, outfile, ensure_ascii=False, indent=4)
 
