@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Finn",
+        "height": "unknown",
+        "mass": "unknown",
+        "hair_color": "black",
+        "skin_color": "dark",
+        "eye_color": "dark",
+        "birth_year": "unknown",
+        "gender": "male",
+        "homeworld": "https://swapi.py4e.com/api/planets/28/",
+        "films": [
+            "https://swapi.py4e.com/api/films/7/"
+        ],
+        "species": [
+            "https://swapi.py4e.com/api/species/1/"
+        ],
+        "vehicles": [],
+        "starships": [],
+        "created": "2015-04-17T06:52:40.793621Z",
+        "edited": "2015-04-17T06:52:40.793674Z",
+        "url": "https://swapi.py4e.com/api/people/84/"
+    },
+    {
+        "name": "Rey",
+        "height": "unknown",
+        "mass": "unknown",
+        "hair_color": "brown",
+        "skin_color": "light",
+        "eye_color": "hazel",
+        "birth_year": "unknown",
+        "gender": "female",
+        "homeworld": "https://swapi.py4e.com/api/planets/28/",
+        "films": [
+            "https://swapi.py4e.com/api/films/7/"
+        ],
+        "species": [
+            "https://swapi.py4e.com/api/species/1/"
+        ],
+        "vehicles": [],
+        "starships": [],
+        "created": "2015-04-17T06:54:01.495077Z",
+        "edited": "2015-04-17T06:54:01.495128Z",
+        "url": "https://swapi.py4e.com/api/people/85/"
+    },
+    {
+        "name": "Poe Dameron",
+        "height": "unknown",
+        "mass": "unknown",
+        "hair_color": "brown",
+        "skin_color": "light",
+        "eye_color": "brown",
+        "birth_year": "unknown",
+        "gender": "male",
+        "homeworld": "https://swapi.py4e.com/api/planets/28/",
+        "films": [
+            "https://swapi.py4e.com/api/films/7/"
+        ],
+        "species": [
+            "https://swapi.py4e.com/api/species/1/"
+        ],
+        "vehicles": [],
+        "starships": [
+            "https://swapi.py4e.com/api/starships/77/"
+        ],
+        "created": "2015-04-17T06:55:21.622786Z",
+        "edited": "2015-04-17T06:55:21.622835Z",
+        "url": "https://swapi.py4e.com/api/people/86/"
+    },
+    {
+        "name": "BB8",
+        "height": "none",
+        "mass": "unknown",
+        "hair_color": "none",
+        "skin_color": "none",
+        "eye_color": "black",
+        "birth_year": "unknown",
+        "gender": "none",
+        "homeworld": "https://swapi.py4e.com/api/planets/28/",
+        "films": [
+            "https://swapi.py4e.com/api/films/7/"
+        ],
+        "species": [
+            "https://swapi.py4e.com/api/species/2/"
+        ],
+        "vehicles": [],
+        "starships": [],
+        "created": "2015-04-17T06:57:38.061346Z",
+        "edited": "2015-04-17T06:57:38.061453Z",
+        "url": "https://swapi.py4e.com/api/people/87/"
+    },
+    {
+        "name": "Captain Phasma",
+        "height": "none",
+        "mass": "unknown",
+        "hair_color": "none",
+        "skin_color": "none",
+        "eye_color": "unknown",
+        "birth_year": "unknown",
+        "gender": "female",
+        "homeworld": "https://swapi.py4e.com/api/planets/28/",
+        "films": [
+            "https://swapi.py4e.com/api/films/7/"
+        ],
+        "species": [
+            "https://swapi.py4e.com/api/species/1/"
+        ],
+        "vehicles": [],
+        "starships": [],
+        "created": "2015-10-13T10:35:39.229823Z",
+        "edited": "2015-10-13T10:35:39.229894Z",
+        "url": "https://swapi.py4e.com/api/people/88/"
+    }
+]

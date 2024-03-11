@@ -1,0 +1,610 @@
+[
+    {
+        "name": "Luke Skywalker",
+        "films": [
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith",
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "C-3PO",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "R2-D2",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith",
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Darth Vader",
+        "films": [
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Leia Organa",
+        "films": [
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith",
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Owen Lars",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Beru Whitesun lars",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "R5-D4",
+        "films": [
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Biggs Darklighter",
+        "films": [
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Anakin Skywalker",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Wilhuff Tarkin",
+        "films": [
+            "Return of the Jedi",
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Chewbacca",
+        "films": [
+            "Return of the Jedi",
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith",
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Han Solo",
+        "films": [
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith",
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Greedo",
+        "films": [
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Jabba Desilijic Tiure",
+        "films": [
+            "A New Hope",
+            "The Phantom Menace",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Wedge Antilles",
+        "films": [
+            "The Phantom Menace",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Jek Tono Porkins",
+        "films": [
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Yoda",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Palpatine",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Boba Fett",
+        "films": [
+            "The Empire Strikes Back",
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "IG-88",
+        "films": [
+            "Attack of the Clones"
+        ]
+    },
+    {
+        "name": "Bossk",
+        "films": [
+            "Attack of the Clones"
+        ]
+    },
+    {
+        "name": "Lando Calrissian",
+        "films": [
+            "Attack of the Clones",
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Lobot",
+        "films": [
+            "Attack of the Clones"
+        ]
+    },
+    {
+        "name": "Ackbar",
+        "films": [
+            "Revenge of the Sith",
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Mon Mothma",
+        "films": [
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Arvel Crynyd",
+        "films": [
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Wicket Systri Warrick",
+        "films": [
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Nien Nunb",
+        "films": [
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Qui-Gon Jinn",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Nute Gunray",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Finis Valorum",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Padmé Amidala",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Jar Jar Binks",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Roos Tarpals",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Rugor Nass",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Ric Olié",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Watto",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Sebulba",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Quarsh Panaka",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Shmi Skywalker",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Darth Maul",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Bib Fortuna",
+        "films": [
+            "Revenge of the Sith"
+        ]
+    },
+    {
+        "name": "Ayla Secura",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Ratts Tyerel",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Dud Bolt",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Gasgano",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Ben Quadinaros",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Mace Windu",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Ki-Adi-Mundi",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Kit Fisto",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Eeth Koth",
+        "films": [
+            "A New Hope",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Adi Gallia",
+        "films": [
+            "A New Hope",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Saesee Tiin",
+        "films": [
+            "A New Hope",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Yarael Poof",
+        "films": [
+            "A New Hope"
+        ]
+    },
+    {
+        "name": "Plo Koon",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Mas Amedda",
+        "films": [
+            "A New Hope",
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Gregar Typho",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Cordé",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Cliegg Lars",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Poggle the Lesser",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Luminara Unduli",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Barriss Offee",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Dormé",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Dooku",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Bail Prestor Organa",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Jango Fett",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Zam Wesell",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Dexter Jettster",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Lama Su",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Taun We",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Jocasta Nu",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "R4-P17",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Wat Tambor",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "San Hill",
+        "films": [
+            "The Empire Strikes Back"
+        ]
+    },
+    {
+        "name": "Shaak Ti",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Grievous",
+        "films": [
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Tarfful",
+        "films": [
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Raymus Antilles",
+        "films": [
+            "Return of the Jedi",
+            "The Phantom Menace"
+        ]
+    },
+    {
+        "name": "Sly Moore",
+        "films": [
+            "The Empire Strikes Back",
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Tion Medon",
+        "films": [
+            "Return of the Jedi"
+        ]
+    },
+    {
+        "name": "Finn",
+        "films": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Rey",
+        "films": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Poe Dameron",
+        "films": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "BB8",
+        "films": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Captain Phasma",
+        "films": [
+            "The Force Awakens"
+        ]
+    }
+]

@@ -4,113 +4,69 @@ import os
 from datetime import datetime
 import pandas as pd
 
-# List of Star Wars APIs to be consumed
-url_peoples = 'https://swapi.dev/api/people/'
-url_films = 'https://swapi.dev/api/films/'
-url_vehicles = 'https://swapi.dev/api/vehicles/'
+# Base URL for the APIs to be consumed
+base_url = 'https://swapi.py4e.com/api/'
 
-# Initializing the objects as empty lists
-peoples = []
-films = []
-vehicles = []
+# Paths for the APIs to be consumed
+paths = ['people', 'films', 'vehicles']
 
-# ------------PEOPLES-----------------
-
-# Criação de lista com todo o conteúdo das paginações da API de peoples
-page = 1
-page_content = requests.get(url=url_peoples+'?page='+str(page)).json()
-next_page = page_content['next']
-peoples.append(page_content)
-
-while (next_page != None):
-    page += 1
-    page_content = requests.get(url=url_peoples+'?page='+str(page)).json()
+# Iteration over each path, for dat collection
+for path in paths:
+    # Initializing the objects as empty lists
+    results = []
+    page = 1
+    page_content = requests.get(url=base_url+'/'+path+'/'+'?page='+str(page)).json()
     next_page = page_content['next']
-    peoples.append(page_content)
+    results.append(page_content)
 
-# Coleta de lista de anos dos itens consultados
-years = []
-df = pd.json_normalize(peoples, record_path=['results'])
+    while (next_page != None):
+        page += 1
+        page_content = requests.get(url=base_url+'/'+path+'/'+'?page='+str(page)).json()
+        next_page = page_content['next']
+        results.append(page_content)
 
-anos = []
+    # Coleta de lista de anos dos itens consultados
+    df = pd.json_normalize(results, record_path=['results'])
 
-for index, row in df.iterrows():
-    year = datetime.strptime(row['created'], '%Y-%m-%dT%H:%M:%S.%fZ').year
-    anos.append(year)
-    if year not in years:
-        years.append(year)
+    # Auxiliary dataframes
+    if path == paths[0]:
+        df_people = df
+    elif path == paths[1]:
+        df_films = df
+    else:
+        df_vehicles = df
 
-df['year'] = anos
-grouped = df.groupby(df.year)
+    df['year'] = pd.to_datetime(df.created, format='mixed').dt.year
+    grouped = df.groupby(df.year)
 
-# Criação dos arquivos para cada ano
-for year in years:
-    if not os.path.exists(f"./files/peoples/{year}/"):
-        os.makedirs(f"./files/peoples/{year}/")
-        print("Directory created successfully")
-    # Segmentando por ano
-    df_prov = grouped.get_group(year)
-    dict = df_prov.to_dict('records')
-    with open(f"./files/peoples/{year}/peoples.json", 'w', encoding='utf-8') as outfile:
-        json.dump(dict, outfile, ensure_ascii=False, indent=4)
+    years = df['year'].unique().tolist()
 
-# ------------PEOPLES-----------------
-
-"""
-
-
-
-# ------------FILMS-----------------
-
-# Writing films to ./files/films.json
-page = 1
-films_results = requests.get(url=url_films+'?page='+str(page)).json()['results']
-years = []
-for film in films_results:
-    film_year = datetime.strptime(film['created'], '%Y-%m-%dT%H:%M:%S.%fZ').year
-    if film_year not in years:
-        years.append(film_year)
-
-for year in years:
-    if not os.path.exists(f"./files/films/{year}/"):
-        os.makedirs(f"./files/films/{year}/")
-        print("Directory created successfully")
-
-page = 1
-page_content = requests.get(url=url_films+'?page='+str(page)).json()
-next_page = page_content['next']
-films.append(page_content)
-
-while (next_page != None):
-    page += 1
-    page_content = requests.get(url=url_films+'?page='+str(page)).json()
-    next_page = films_page_content['next']
-    films.append(page_content)
-
-with open(f"./files/films/films.json", 'w', encoding='utf-8') as outfile:
-    json.dump(films, outfile, ensure_ascii=False, indent=4)
-
-# ------------FILMS-----------------
+    # Criação dos arquivos para cada ano
+    for year in years:
+        if not os.path.exists(f"./files/{path}/{year}/"):
+            os.makedirs(f"./files/{path}/{year}/")
+            print("Directory created successfully")
+        # Segmentando por ano
+        df_prov = grouped.get_group(year)
+        df_prov = df_prov.drop(['year'], axis=1)
+        dict = df_prov.to_dict('records')
+        with open(f"./files/{path}/{year}/{path}.json", 'w', encoding='utf-8') as outfile:
+            json.dump(dict, outfile, ensure_ascii=False, indent=4)
 
 
-# ------------VEHICLES-----------------
+print(f"A quantidade de registros retornada foi: {df_people.name.count()}")
+list_of_films = []
+# Salvar em um arquivo json o nome de 1 pessoa e os filmes associados a ela.
+for index, row in df_people.iterrows():
+    film_ids = []
+    for film in row["films"]:
+        film_ids.append(int(film[-2]))
+    filtered_list = [df_films.title[df_films.episode_id == item].values[0] for item in df_films.episode_id.tolist() if item in film_ids]
+    list_of_films.append(filtered_list)
 
-# Writing vehicles to ./files/vehicles.json
-page = 1
-page_content = requests.get(url=url_vehicles+'?page='+str(page)).json()
-next_page = page_content['next']
-vehicles.append(page_content)
+df_people.films = list_of_films
 
-while (next_page != None):
-    page += 1
-    page_content = requests.get(url=url_vehicles+'?page='+str(page)).json()
-    next_page = page_content['next']
-    vehicles.append(page_content)
-
-with open('./files/vehicles/vehicles.json', 'w', encoding='utf-8') as outfile:
-    json.dump(vehicles, outfile, ensure_ascii=False, indent=4)
-
-# ------------VEHICLES-----------------
-
-
-"""
+df_people_cast = df_people[['name', 'films']]
+dict = df_people_cast.to_dict('records')
+with open(f"./files/people/cast/people.json", 'w', encoding='utf-8') as outfile:
+            json.dump(dict, outfile, ensure_ascii=False, indent=4)
