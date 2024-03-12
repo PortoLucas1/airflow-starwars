@@ -4,10 +4,10 @@ import os
 from datetime import datetime
 import pandas as pd
 
-# URL de base para as APIs.
+# URL de base para as APIs
 base_url = 'https://swapi.py4e.com/api/'
 
-# Paths relativos às APIs consumidas.
+# Paths relativos às APIs consumidas
 paths = ['people', 'films', 'vehicles']
 
 # Iteração em cada path, para coleta de dados
