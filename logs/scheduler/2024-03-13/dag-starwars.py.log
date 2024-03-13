@@ -5212,3 +5212,130 @@ UnboundLocalError: cannot access local variable 'my_task' where it is not associ
 [2024-03-13T20:40:14.551+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:40:14.550+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-03-13T20:40:14.616+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:40:14.610+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
 [2024-03-13T20:40:14.719+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 1.966 seconds
+[2024-03-13T20:40:45.496+0000] {processor.py:161} INFO - Started process (PID=44868) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:40:45.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:40:45.512+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:40:45.512+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:40:46.967+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:40:47.009+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:40:47.009+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:40:47.042+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:40:47.042+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:40:47.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 1.615 seconds
+[2024-03-13T20:41:17.549+0000] {processor.py:161} INFO - Started process (PID=44928) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:41:17.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:41:17.562+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:41:17.561+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:41:18.932+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:41:18.950+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:41:18.950+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:41:18.962+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:41:18.961+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:41:18.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 1.443 seconds
+[2024-03-13T20:41:49.345+0000] {processor.py:161} INFO - Started process (PID=44990) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:41:49.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:41:49.351+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:41:49.350+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:41:50.556+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:41:50.578+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:41:50.578+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:41:50.589+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:41:50.589+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:41:50.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 1.271 seconds
+[2024-03-13T20:42:21.079+0000] {processor.py:161} INFO - Started process (PID=45050) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:42:21.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:42:21.083+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:42:21.082+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:42:21.591+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:42:21.613+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:42:21.613+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:42:21.626+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:42:21.626+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:42:21.652+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.578 seconds
+[2024-03-13T20:42:51.916+0000] {processor.py:161} INFO - Started process (PID=45113) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:42:51.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:42:51.923+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:42:51.923+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:42:53.159+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:42:53.200+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:42:53.200+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:42:53.234+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:42:53.234+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:42:53.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 1.373 seconds
+[2024-03-13T20:44:20.226+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:44:20.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:44:20.245+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:44:20.242+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:44:26.649+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:44:27.190+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:44:27.180+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:44:27.238+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:44:27.231+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:44:27.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 7.071 seconds
+[2024-03-13T20:46:05.659+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:46:05.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:46:05.663+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:46:05.663+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:46:11.550+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:46:11.928+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:46:11.927+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:46:11.950+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:46:11.950+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:46:12.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 6.385 seconds
+[2024-03-13T20:46:42.144+0000] {processor.py:161} INFO - Started process (PID=94) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:46:42.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:46:42.149+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:46:42.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:46:42.893+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:46:42.925+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:46:42.922+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:46:42.949+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:46:42.949+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:46:42.985+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.852 seconds
+[2024-03-13T20:47:13.470+0000] {processor.py:161} INFO - Started process (PID=152) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:47:13.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:47:13.475+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:47:13.474+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:47:13.867+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:47:13.886+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:47:13.886+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:47:13.899+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:47:13.899+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:47:13.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.450 seconds
+[2024-03-13T20:49:38.005+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:49:38.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:49:38.020+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:38.019+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:49:47.233+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:49:47.617+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:47.616+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:dag-starwars
+[2024-03-13T20:49:47.649+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:47.649+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:dag-starwars
+[2024-03-13T20:49:47.672+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:47.671+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:dag-starwars
+[2024-03-13T20:49:47.673+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:47.672+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:49:47.718+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:47.717+0000] {dag.py:3069} INFO - Creating ORM DAG for dag-starwars
+[2024-03-13T20:49:47.723+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:49:47.723+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:49:47.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 9.805 seconds
+[2024-03-13T20:50:18.233+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:50:18.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:50:18.242+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:50:18.241+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:50:18.891+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:50:18.933+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:50:18.933+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:50:18.947+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:50:18.947+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:50:18.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.740 seconds
+[2024-03-13T20:50:49.563+0000] {processor.py:161} INFO - Started process (PID=156) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:50:49.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:50:49.572+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:50:49.571+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:50:50.456+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:50:50.519+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:50:50.519+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:50:50.533+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:50:50.532+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:50:50.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.998 seconds
+[2024-03-13T20:51:21.061+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:51:21.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:51:21.065+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:51:21.064+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:51:21.783+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:51:21.830+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:51:21.829+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:51:21.861+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:51:21.861+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:51:21.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.848 seconds
+[2024-03-13T20:51:51.996+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:51:51.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:51:52.000+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:51:51.999+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:51:52.313+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:51:52.329+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:51:52.329+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:51:52.341+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:51:52.341+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:51:52.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.362 seconds
+[2024-03-13T20:52:22.791+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:52:22.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:52:22.798+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:52:22.797+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:52:24.059+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:52:24.329+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:52:24.328+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:52:24.348+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:52:24.348+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:52:24.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 1.601 seconds
+[2024-03-13T20:56:27.352+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:56:27.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:56:27.368+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:27.367+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:56:32.416+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:56:32.841+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:32.841+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:dag-starwars
+[2024-03-13T20:56:32.873+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:32.872+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:dag-starwars
+[2024-03-13T20:56:32.889+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:32.889+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:dag-starwars
+[2024-03-13T20:56:32.890+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:32.889+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:56:32.936+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:32.934+0000] {dag.py:3069} INFO - Creating ORM DAG for dag-starwars
+[2024-03-13T20:56:32.940+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:56:32.939+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:56:32.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 5.649 seconds
+[2024-03-13T20:57:03.589+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:57:03.591+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag-starwars.py for tasks to queue
+[2024-03-13T20:57:03.593+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:57:03.593+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:57:03.983+0000] {processor.py:840} INFO - DAG(s) 'dag-starwars' retrieved from /opt/airflow/dags/dag-starwars.py
+[2024-03-13T20:57:04.006+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:57:04.006+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-13T20:57:04.020+0000] {logging_mixin.py:188} INFO - [2024-03-13T20:57:04.020+0000] {dag.py:3834} INFO - Setting next_dagrun for dag-starwars to None, run_after=None
+[2024-03-13T20:57:04.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag-starwars.py took 0.451 seconds
