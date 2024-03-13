@@ -1,14 +1,54 @@
 [
     {
+        "name": "Finn",
+        "height": "unknown",
+        "gender": "male",
+        "titles": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Rey",
+        "height": "unknown",
+        "gender": "female",
+        "titles": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Poe Dameron",
+        "height": "unknown",
+        "gender": "male",
+        "titles": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "BB8",
+        "height": "none",
+        "gender": "none",
+        "titles": [
+            "The Force Awakens"
+        ]
+    },
+    {
+        "name": "Captain Phasma",
+        "height": "none",
+        "gender": "female",
+        "titles": [
+            "The Force Awakens"
+        ]
+    },
+    {
         "name": "Luke Skywalker",
         "height": "172",
         "gender": "male",
         "titles": [
+            "The Force Awakens",
             "A New Hope",
             "The Empire Strikes Back",
             "Return of the Jedi",
-            "Revenge of the Sith",
-            "The Force Awakens"
+            "Revenge of the Sith"
         ]
     },
     {
@@ -29,13 +69,13 @@
         "height": "96",
         "gender": "n/a",
         "titles": [
+            "The Force Awakens",
             "A New Hope",
             "The Empire Strikes Back",
             "Return of the Jedi",
             "The Phantom Menace",
             "Attack of the Clones",
-            "Revenge of the Sith",
-            "The Force Awakens"
+            "Revenge of the Sith"
         ]
     },
     {
@@ -54,11 +94,11 @@
         "height": "150",
         "gender": "female",
         "titles": [
+            "The Force Awakens",
             "A New Hope",
             "The Empire Strikes Back",
             "Return of the Jedi",
-            "Revenge of the Sith",
-            "The Force Awakens"
+            "Revenge of the Sith"
         ]
     },
     {
@@ -134,11 +174,11 @@
         "height": "228",
         "gender": "male",
         "titles": [
+            "The Force Awakens",
             "A New Hope",
             "The Empire Strikes Back",
             "Return of the Jedi",
-            "Revenge of the Sith",
-            "The Force Awakens"
+            "Revenge of the Sith"
         ]
     },
     {
@@ -146,10 +186,10 @@
         "height": "180",
         "gender": "male",
         "titles": [
+            "The Force Awakens",
             "A New Hope",
             "The Empire Strikes Back",
-            "Return of the Jedi",
-            "The Force Awakens"
+            "Return of the Jedi"
         ]
     },
     {
@@ -260,8 +300,8 @@
         "height": "180",
         "gender": "male",
         "titles": [
-            "Return of the Jedi",
-            "The Force Awakens"
+            "The Force Awakens",
+            "Return of the Jedi"
         ]
     },
     {
@@ -739,46 +779,6 @@
         "gender": "male",
         "titles": [
             "Revenge of the Sith"
-        ]
-    },
-    {
-        "name": "Finn",
-        "height": "unknown",
-        "gender": "male",
-        "titles": [
-            "The Force Awakens"
-        ]
-    },
-    {
-        "name": "Rey",
-        "height": "unknown",
-        "gender": "female",
-        "titles": [
-            "The Force Awakens"
-        ]
-    },
-    {
-        "name": "Poe Dameron",
-        "height": "unknown",
-        "gender": "male",
-        "titles": [
-            "The Force Awakens"
-        ]
-    },
-    {
-        "name": "BB8",
-        "height": "none",
-        "gender": "none",
-        "titles": [
-            "The Force Awakens"
-        ]
-    },
-    {
-        "name": "Captain Phasma",
-        "height": "none",
-        "gender": "female",
-        "titles": [
-            "The Force Awakens"
         ]
     }
 ]
