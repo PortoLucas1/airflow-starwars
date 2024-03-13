@@ -56,17 +56,13 @@ for path in paths:
         with open(f"./files/{path}/{year}/{path}.json", 'w', encoding='utf-8') as outfile:
             json.dump(dict, outfile, ensure_ascii=False, indent=4)
 
-# Quantidade de registros retornados no endpoint people
-# print(f"A quantidade de registros retornada foi: {df_people.name.count()}")
-
 # Salvar em um arquivo json o nome de 1 personagem e os filmes associados a este.
-
-# Coleta dos dataframes auxiliares
 def list_folders(directory):
     for folder_name in os.listdir(directory):
         if os.path.isdir(os.path.join(directory, folder_name)):
             yield folder_name
 
+# Coleta dos dataframes auxiliares
 df_people = pd.DataFrame()
 people_directory_path = "./files/people"
 for folder in list_folders(people_directory_path):
@@ -77,6 +73,8 @@ films_directory_path = "./files/films"
 for folder in list_folders(films_directory_path):
     df_films = pd.concat([df_films, pd.read_json(f"./files/films/{folder}/films.json")], ignore_index=True)
 
+# Quantidade de registros retornados no endpoint people
+print(f"A quantidade de registros retornada foi: {df_people.name.count()}")
 
 # Criação do arquivo cast.json com títulos dos filmes para os personagens
 list_of_films = []
