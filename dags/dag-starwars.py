@@ -60,13 +60,13 @@ def dag_starwars():
                     json.dump(dict, outfile, ensure_ascii=False, indent=4)
     
     @task
-    def contagem_registros():
+    def contagem_personagens():
         def list_folders(directory):
             for folder_name in os.listdir(directory):
                 if os.path.isdir(os.path.join(directory, folder_name)):
                     yield folder_name
 
-        # Coleta dos dataframes auxiliares
+        # Coleta do dataframe auxiliar
         df_people = pd.DataFrame()
         people_directory_path = "./files/people"
         for folder in list_folders(people_directory_path):
@@ -76,7 +76,7 @@ def dag_starwars():
         print(f"A quantidade de registros retornada foi: {df_people.name.count()}")
 
     @task
-    def casting():
+    def participacao_filmes():
         def list_folders(directory):
             for folder_name in os.listdir(directory):
                 if os.path.isdir(os.path.join(directory, folder_name)):
@@ -112,17 +112,17 @@ def dag_starwars():
         print(dict)
 
         if not os.path.exists(f"./files/cast/"):
-                    os.makedirs(f"./files/cast/")
-                    print("Directory created successfully")
+            os.makedirs(f"./files/cast/")
+            print("Directory created successfully")
         with open(f"./files/cast/cast.json", 'w', encoding='utf-8') as outfile:
-                    json.dump(dict, outfile, ensure_ascii=False, indent=4)
+            json.dump(dict, outfile, ensure_ascii=False, indent=4)
 
     # Instanciação de tasks
     coleta_dados = coleta_dados(base_url)
-    contagem_registros = contagem_registros()
-    casting = casting()
+    contagem_personagens = contagem_personagens()
+    participacao_filmes = participacao_filmes()
 
     # Dependência de tasks
-    coleta_dados >> contagem_registros >> casting
+    coleta_dados >> contagem_personagens >> participacao_filmes
     
 dag_starwars = dag_starwars()
