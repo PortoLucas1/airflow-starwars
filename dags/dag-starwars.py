@@ -1,5 +1,4 @@
-from airflow.decorators import dag, task, task_group
-from airflow.operators.python import PythonOperator
+from airflow.decorators import dag, task
 from airflow import DAG
 
 from datetime import datetime 
