@@ -21,7 +21,7 @@ paths = ['people', 'films', 'vehicles']
 def dag_starwars():
 
     @task
-    def coleta_de_dados(url):
+    def coleta_dados(url):
         # Iteração em cada path, para coleta de dados
         for path in paths:
             results = []
@@ -60,7 +60,7 @@ def dag_starwars():
                     json.dump(dict, outfile, ensure_ascii=False, indent=4)
     
     @task
-    def contagem_registros_people():
+    def contagem_registros():
         def list_folders(directory):
             for folder_name in os.listdir(directory):
                 if os.path.isdir(os.path.join(directory, folder_name)):
@@ -118,11 +118,11 @@ def dag_starwars():
                     json.dump(dict, outfile, ensure_ascii=False, indent=4)
 
     # Instanciação de tasks
-    coleta_de_dados = coleta_de_dados(base_url)
-    contagem_registros_people = contagem_registros_people()
+    coleta_dados = coleta_dados(base_url)
+    contagem_registros = contagem_registros()
     casting = casting()
 
     # Dependência de tasks
-    coleta_de_dados >> contagem_registros_people >> casting
+    coleta_dados >> contagem_registros >> casting
     
 dag_starwars = dag_starwars()
