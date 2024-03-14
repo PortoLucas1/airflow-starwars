@@ -8,7 +8,8 @@ import os
 import pandas as pd
 
 # URL de base para as APIs
-base_url = 'https://swapi.py4e.com/api/'
+# base_url = 'https://swapi.py4e.com/api/'
+base_url = 'https://swapi.dev/api/'
 
 # Paths relativos às APIs consumidas
 paths = ['people', 'films', 'vehicles']
