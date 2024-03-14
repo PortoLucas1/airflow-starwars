@@ -1,5 +1,4 @@
 from airflow.decorators import dag, task
-from airflow import DAG
 
 from datetime import datetime 
 
@@ -16,7 +15,7 @@ paths = ['people', 'films', 'vehicles']
 
 @dag(
     dag_id='dag-starwars',
-    start_date=datetime(2024,3,13),
+    start_date=datetime(2024,3,14),
     schedule=None
 )
 def dag_starwars():
